@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First code </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <base href="/something/test/test2"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="favicon" href="logo.png">
+    <!-- image/x-icon;  application/json applicaiton/html  /Mimetype-->
+    <style>
+        a{
+            color: red;
+        }
+    </style>
+    
 </head>
 <body>
     <h3>First code sample</h3>
+    <a href="#subhead">Testand a tag base</a>
+    <div id="subhead">
+        <h3> this is a subheading</h3>
+    </div>
+    <script>
+
+        console.log('I will change the background to a value that user will pass')
+
+        var color = prompt('Informe a cor de background')
+        console.log('color was ',color)
+
+        document.body.style =`background: ${color} !important;` 
+    </script>
 </body>
 </html>
